@@ -1,4 +1,4 @@
-//def registry = 'https://venkydevops26.jfrog.io'
+def registry = 'https://venkydevops26.jfrog.io'
 def imageName = 'venkydevops26.jfrog.io/docker-repo-docker-local/ttrend'
 def version   = '2.1.2'
 pipeline {
