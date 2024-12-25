@@ -95,6 +95,14 @@ environment {
                echo '<--------------- Docker Publish Ended --------------->'  
             }
         }
+    }
+
+    stage (" deployment "){
+        steps {
+            script {
+                sh './deploy.sh'
+            }
+        }
     }    
       
         
