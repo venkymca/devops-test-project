@@ -97,15 +97,22 @@ environment {
         }
     }
 
-    stage (" deployment "){
+   /* stage (" deployment "){
         steps {
             script {
                 sh './deploy.sh'
             }
         }
-    }    
+    } */
+
+    stage (" deployment "){
+        steps {
+            script {
+                sh 'helm install ttrend ttrend-0.1.0.tgz'
+            }
+        }
+    }     
       
         
     }
-
 }  
